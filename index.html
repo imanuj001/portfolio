@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        body{
+            background-color: rgb(2, 2, 2);
+            color: white;
+            transition: all ease-in 1s ;
+        }
+        nav{
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            height: 70px;
+            background-color: rgb(57, 57, 66);
+        }
+        .left{
+            font-size: 1.4rem
+            }
+        nav ul{
+            display: flex;
+            justify-content: center;
+        }
+        nav ul li{
+            list-style: none;
+            margin: 0px 25px;
+        }
+        nav ul li a{
+            text-decoration: none;
+            color: white;
+        }
+        nav ul li a:hover{
+            color: orange;
+        }
+        .firstsection{
+            display: flex;
+            justify-content: space-around;
+            margin: 80px 0px;
+            align-items: center;
+            
+        }
+        .firstsection > div{
+            width: 30%;
+        }
+        .leftsection{
+            /* background-color: rgb(63, 12, 139); */
+            font-size: 3rem;
+        }
+        
+        .rightsection img{
+            width: 80%;
+        }
+        .name{
+            color:orange;
+        }
+        #element{
+            color:orange;
+        }
+        .secondsection{
+            max-width: 80vw;
+            margin: auto;
+        }
+        .secondsection h1{
+            font-size: 2rem;
+            margin-left: 25px;
+        }
+        .secondsection{
+            display:flex;
+            max-width: 80vw;
+            margin: auto;
+            height: 80vh;
+            
+        }
+
+        main hr{
+            background-color: blueviolet;
+            margin: 85px;
+        }
+
+        .box {
+            /* background: white; */
+            font-size: 1.8rem;
+            margin-top: 100px;
+        }
+        .imag img{
+            width: 80%;
+        
+        }
+        .imag{
+            margin-top: 100px;
+        }
+
+        .thirdsection{
+            display: flex;
+            margin: 90px 0px;
+            
+        }
+        .thirdsection h1{
+            font-size: 2rem;
+            margin-left: 170px;
+        }
+        .item1 img{
+            margin-top: 100px;
+            width:60%;
+        }
+        .item2 img{
+            margin-top: 100px;
+            width:60%;
+            
+        }
+        .item3 img{
+            margin-top: 100px;
+            width:60%;
+            
+        }
+        .thirdsection div{
+            width: 60%;
+        }
+        footer{
+            background-color: rgb(49, 43, 43);
+            height: 150px;
+        }
+        .footer{
+            display: flex;
+            padding: 23px 100px;
+            justify-content: space-evenly;
+        }
+        .foot2 img{
+            width: 30px;
+        }
+        .foot3 img{
+            width: 30px;
+        }
+        .foot4 img{
+            width: 30px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="left">
+                Anuj's Portfolio
+            </div>
+            <div class="right">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#About">About</a></li>
+                    <li><a href="#Skills">Skills</a></li>
+                    <li><a href="#footer">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    
+    <main>
+        <section class="firstsection">
+            <div class="leftsection">
+                Namaste, Myself  <span class="name">Anuj</span>
+                <div>And I am learning Web Development</div>
+                <span id="element"></span>
+            </div>
+            <div class="rightsection">
+                <img src="img/images.jpeg" alt="">
+            </div>
+        </section>
+
+        <hr>
+
+        <section class="secondsection">
+            <h1 id="About">
+                About
+            </h1>
+            <div class="imag">
+                <img src="ani.png" alt="">
+            </div>
+            <div class="box">
+                Radhe Radhe, this is Anuj Rajput currently studying in Ajay Kumar Garg Engineering college in Ghaziabad.
+                I love to enjoy every moment of life, whether it is a failure or success. 
+                Novice to development world, but learning with full enthusiasm. Very much interested in competitive Programming 
+                and trying to improve my cp skills.
+            </div>
+        </section>
+
+        <hr>
+
+        <section class="thirdsection">
+            <h1 id="Skills">
+                Skills
+            </h1>
+            <div class="item1">
+                <img src="img/cpp.png" alt="">
+            </div>
+            <div class="item2">
+                <img src="img/htm.png" alt="">
+            </div>
+            <div class="item3">
+                <img src="img/csss.png" alt="">
+            </div>
+        </section>
+
+        <footer>
+            <div class="footer" id="footer">
+                <div class="foot1">
+                    <h3>Anuj's Developer Portfolio</h3>
+                </div>
+                <div class="foot2">
+                    <img src="img/insta.jpeg" alt="">
+                    <a href="https://www.instagram.com">Instahandle</a>
+                </div>
+                <div class="foot3">
+                    <img src="img/linkdin.jpeg" alt="">
+                   <a href="https://www.linkedin.com">LinkedIn</a> 
+                </div>
+                <div class="foot4">
+                    <img src="img/twit.png" alt="">
+                    <a href="https://www.twitter.com">twitter</a>
+                </div>
+            </div>
+        </footer>
+    </main>
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <script>
+        var typed = new Typed('#element', {
+          strings: ['Web developer', 'Cp learner','tech enthusiast'],
+          typeSpeed: 50,
+        });
+      </script>
+</body>
+</html>
